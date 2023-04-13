@@ -1,0 +1,54 @@
+/*byl jsem nucen použít jiné ikony pro menu a vyhledávání*/
+body {
+    background-color: gray;
+    padding: 2em;
+}
+
+.middle {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.h-flex {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    height: 5em;
+    text-align: center;
+}
+
+.h-flex__item {
+    display: block;
+    flex: 1;
+    max-height: 5em;
+    margin-bottom: 0;
+    padding: auto;
+    
+    
+}
+
+.h-flex__item-mag {
+    margin-right: 0;
+    padding-right: 0;
+    padding-top: 1em;
+    text-align: right;
+}
+
+.box-shadow-menu {
+    position: relative;
+    padding-left: 1.25em;
+}
+
+.box-shadow-menu:before {
+    content: "";
+    position: absolute;
+    margin-top: 1em;
+    left: 0;
+    top: 0.25em;
+    width: 2em;
+    height: 0.3em;
+    background: white;
+    box-shadow: 
+        0 0.7em 0 0 white,
+        0 1.4em 0 0 white;
+}
