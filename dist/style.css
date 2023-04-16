@@ -1,12 +1,39 @@
-/*byl jsem nucen použít jiné ikony pro menu a vyhledávání*/
 body {
-    background-color: gray;
-    padding: 2em;
+    background-color: #333333;
+    margin: 0;
+    
+
+    font-family: 'Poppins', sans-serif;
 }
 
-.middle {
+section {
+    padding: 0;
+}
+
+a {
+    color: white;
+    border: solid 2px #333333;
+}
+
+article a:hover {
+    border-bottom: solid 2px white;
+    border-right: solid 2px white;
+}
+
+span {
+    color: #E5B2CA;
+}
+
+header, section, footer {
     max-width: 1140px;
+    padding: 2em;
     margin: auto;
+}
+
+.block-background {
+    background-color: #222222;
+    padding: 1em;
+    z-index: -1;
 }
 
 .h-flex {
@@ -22,7 +49,6 @@ body {
     flex: 1;
     max-height: 5em;
     margin-bottom: 0;
-    padding: auto;
     
     
 }
@@ -51,4 +77,142 @@ body {
     box-shadow: 
         0 0.7em 0 0 white,
         0 1.4em 0 0 white;
+}
+
+.b-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.b-flex__item {
+    flex: 1;
+}
+
+.b-flex__item-large {
+    display: block;
+    flex: 3;
+    position: relative;
+    
+    height: 24em;
+    width: 100%;
+
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.b-flex__item-small {
+    display: block;
+    flex: 1;
+    position: relative;
+    
+    height: 15em;
+    width: 100%;
+
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.b-flex__item-large-a1 {
+    background-image: linear-gradient(to bottom, transparent, transparent, black),url(article1.jpg);
+}
+
+.b-flex__item-small-a2 {
+    background-image: linear-gradient(to bottom, transparent, transparent, black),url(article2.jpg);
+}
+
+.b-flex__item-small-a3 {
+    background-image: linear-gradient(to bottom, transparent, transparent, black),url(article3.jpg);
+}
+
+.b-flex__item-large-a4 {
+    background-image: linear-gradient(to bottom, transparent, transparent, black),url(article4.jpg);
+}
+
+.b-flex__item-banner {
+    display: block;
+    flex: 1;
+    width: 15em;
+
+    border: solid 2px #333333;
+    background-repeat: no-repeat;
+    background: linear-gradient(125deg, #E5B2CA, #7028E4);
+}
+
+.banner-background {
+    background-image: url(space-station-moon-alt-duotone.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 30em;
+    
+}
+
+.banner-flex {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    gap: 5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-flex__item {
+    display: block;
+    flex: 1;
+    text-align: center;
+}
+
+.banner-text {
+    font-weight: bold;
+    color: white;
+}
+
+.bottom-text {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+
+    
+    margin-bottom: 3em;
+    margin-left: 2em;
+}
+
+.bottom-text__small {
+    margin-bottom: 1em;
+    margin-left: 2em;
+    margin-right: 5em;
+    font-size: small;
+}
+
+.tag {
+    font-size: small;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #84FAB0;
+    color: black;
+    padding: 0.25em 0.8em 0.25em 0.8em;
+    margin-left: 2em;
+    margin-top: 3em;
+}
+
+.tag-small {
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+.tag-tech {
+    color: white;
+    background-color: #7028E4;
+}
+
+.small-flex {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1em;
 }
