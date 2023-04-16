@@ -30,6 +30,38 @@ header, section, footer {
     margin: auto;
 }
 
+.navigation {
+    display: block;
+    position: fixed;
+    left: 0;
+}
+
+.menulogo {
+    display: block;
+    width: 20px;
+    height: 20px;
+    content: "";
+    background-repeat: no-repeat;
+    margin-left: 4em;
+    margin-bottom: 1em;
+}
+
+.menulogo-fb {
+    background-image: url(facebook-f-brands.svg);
+}
+
+.menulogo-tw {
+    background-image: url(twitter-brands.svg);
+}
+
+.menulogo-ig {
+    background-image: url(instagram-brands.svg);
+}
+
+.menulogo-sh {
+    background-image: url(share-alt-solid.svg);
+}
+
 .block-background {
     background-color: #222222;
     padding: 1em;
@@ -215,4 +247,8 @@ header, section, footer {
     flex-direction: column;
 
     gap: 1em;
+}
+
+.logo-small {
+    float: right;
 }
