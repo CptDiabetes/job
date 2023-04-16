@@ -21,6 +21,10 @@ article a:hover {
 }
 
 span {
+    color: white;
+}
+
+.coloredspan {
     color: #E5B2CA;
 }
 
